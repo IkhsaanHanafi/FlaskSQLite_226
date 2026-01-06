@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Buku</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Daftar Buku</h2>
+
+    <a href="/add" class="btn-add">+ Tambah Buku</a>
+
+    <div class="cards">
+        {% for book in books %}
+        <div class="card">
+            <h3>{{ book.judul }}</h3>
+            <p>{{ book.penulis }}</p>
+
+            <div class="aksi">
+                <a href="/edit/{{ book.id }}" class="btn-edit">Edit</a>
+                <a href="/delete/{{ book.id }}" class="btn-hapus">Hapus</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+</body>
+</html>

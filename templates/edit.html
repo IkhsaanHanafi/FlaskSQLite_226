@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Buku</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Edit Buku</h2>
+
+    <form method="post">
+        <input type="text" name="judul" value="{{ book.judul }}" required><br><br>
+        <input type="text" name="penulis" value="{{ book.penulis }}" required><br><br>
+        <input type="submit" value="Update" class="btn-add">
+    </form>
+
+    <br>
+    <a href="/">Kembali</a>
+</div>
+
+</body>
+</html>

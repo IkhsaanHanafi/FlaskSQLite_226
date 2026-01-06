@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #7de2d1, #9fa8da);
+}
+
+.container {
+    width: 70%;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.btn-add {
+    display: inline-block;
+    margin-bottom: 25px;
+    padding: 10px 16px;
+    background: #6c63ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 220px;
+    background: #f8f8f8;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.card h3 {
+    margin: 0 0 5px 0;
+}
+
+.card p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.aksi {
+    margin-top: 15px;
+}
+
+.btn-edit {
+    display: inline-block;
+    padding: 6px 10px;
+    background: #cccccc;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.btn-hapus {
+    display: inline-block;
+    padding: 6px 10px;
+    background: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.form {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
